@@ -1,10 +1,36 @@
 <% provide(:title, "Edit") %>
-<% provide(:class_text, 'user--edit') %>
-<% provide(:button_text, '更新') %>
-<h1>ユーザー情報の更新</h1>
+<% provide(:class_text, 'users/62/edit') %>
+<% provide(:button_text, 'タスク一覧') %>
+
+<div class="container">
+      
+<h1>CHONOのタスク一覧</h1>
+
 
 <div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= render 'form' %>
-  </div>
+  <div class="col-md-10 col-md-offset-1">
+    <a class="btn btn-lg btn-primary pull-right" href="/users/105/tasks/new">タスク新規作成</a>
+    <table class="table table-hover" id="table-tasks">
+      <thead>
+        <tr>
+          <th>名称</th>
+          <th>作成日</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+          <tr>
+            <td><a id="task-name" href="/users/105/tasks/158">chono</a></td>
+            <td>2019/08/03 23:36</td>
+            <td>
+              <a class="btn btn-success" href="/users/105/tasks/158/edit">編集</a>
+              <a data-confirm="「chono」を削除します。よろしいですか？" class="btn btn-danger" rel="nofollow" data-method="delete" href="/users/105/tasks/158">削除</a>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>    
+</div>
+      
 </div>
