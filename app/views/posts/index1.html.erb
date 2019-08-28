@@ -1,14 +1,11 @@
-<% provide(:title, "basic") %>
-<% provide(:class_text, 'users/62/basic') %>
-<% provide(:button_text, 'ユーザー情報の更新') %>
-
- <div class="container">
+<% provide(:title, 'Index1') %>
+<div class="container">
       
-<h1>ユーザー情報の更新</h1>
+<h2>ユーザー情報の更新</h2>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <form action="/users/105" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="patch" /><input type="hidden" name="authenticity_token" value="sRxorYRvWGWcyMRhMWLC1n6+FlPmUu8UmONY1rv8qsWJEaqw2Ny+zagBOttN0ktA+E83o8yyFzUisPfye5eblQ==" />
+    <form action="/users/105" accept-charset="UTF-8" method="post"><isnput name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="patch" /><input type="hidden" name="authenticity_token" value="sRxorYRvWGWcyMRhMWLC1n6+FlPmUu8UmONY1rv8qsWJEaqw2Ny+zagBOttN0ktA+E83o8yyFzUisPfye5eblQ==" />
   
 
   <label class="label-form" for="user_name">名前</label>
@@ -22,10 +19,9 @@
 
   <label class="label-form" for="user_password_confirmation">パスワード再入力</label>
   <input class="form-control" type="password" name="user[password_confirmation]" />
-
+<br>
   <input type="submit" name="commit" value="更新" class="btn btn-primary btn-block btn-form" data-disable-with="更新" />
 </form>
   </div>
 </div>
-      
-    </div>
+</div>

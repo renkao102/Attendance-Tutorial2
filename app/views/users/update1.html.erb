@@ -1,0 +1,43 @@
+<% provide(:title, 'Update1') %>
+<div class="container">
+        <div class="alert alert-success">タスクを更新しました。</div>
+      
+<h2>タスク詳細</h2>
+
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <table class="table table-bordered" id="table-task">
+      <tbody>
+        <tr>
+          <th class="active col-md-2">ID</th>
+          <td class="col-md-10">158</td>
+        </tr>
+        <tr>
+          <th class="active">名称</th>
+          <td>chono</td>
+        </tr>
+        <tr>
+          <th class="active">詳細</th>
+          <td>
+            Oh YHAH！
+          </td>
+        </tr>
+        <tr>
+          <th class="active">作成日</th>
+          <td>2019/08/03 23:36</td>
+        </tr>
+        <tr>
+          <th class="active">更新日</th>
+          <td>2019/08/03 23:36</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div>
+      <a class="btn btn-lg btn-success" <%= link_to "編集", users_update_path%></a>
+      <a data-confirm="「chono」を削除します。よろしいですか？" class="btn btn-lg btn-danger" rel="nofollow" data-method="delete" href="/users/105/tasks/158">削除</a>
+    </div>
+  </div>    
+</div>
+      
+    </div>

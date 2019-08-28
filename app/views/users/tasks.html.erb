@@ -1,0 +1,28 @@
+<% provide(:title, 'Tasks') %>
+<div class="container">
+      
+<h1>ユーザー情報の更新</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <form action="/users/105" accept-charset="UTF-8" method="post"><isnput name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="patch" /><input type="hidden" name="authenticity_token" value="sRxorYRvWGWcyMRhMWLC1n6+FlPmUu8UmONY1rv8qsWJEaqw2Ny+zagBOttN0ktA+E83o8yyFzUisPfye5eblQ==" />
+  
+
+  <label class="label-form" for="user_name">名前</label>
+  <input class="form-control" type="text" value="CHONO" name="user[name]" />
+
+  <label class="label-form" for="user_email">メールアドレス</label>
+  <input class="form-control" type="email" value="chono0316@gmail.com" name="user[email]" />
+
+  <label class="label-form" for="user_password">パスワード</label>
+  <input class="form-control" type="password" name="user[password]" />
+
+  <label class="label-form" for="user_password_confirmation">パスワード再入力</label>
+  <input class="form-control" type="password" name="user[password_confirmation]" />
+
+  <input type="submit" name="commit" value="更新" class="btn btn-primary btn-block btn-form" data-disable-with="更新" />
+</form>
+  </div>
+</div>
+      
+    </div>

@@ -1,15 +1,15 @@
-<% provide(:title, "Edit") %>
-<% provide(:class_text, 'users/62/edit') %>
+<% provide(:title, 'Edit') %>
+<% provide(:class_text, 'users/edit') %>
 <% provide(:button_text, 'タスク一覧') %>
 
 <div class="container">
       
-<h1>CHONOのタスク一覧</h1>
+<h2>CHONOのタスク一覧</h2>
 
 
 <div class="row">
   <div class="col-md-10 col-md-offset-1">
-    <a class="btn btn-lg btn-primary pull-right" href="/users/105/tasks/new">タスク新規作成</a>
+    <a class="btn btn-lg btn-primary pull-right" <%= link_to "タスク新規作成", users_index_path%></a>
     <table class="table table-hover" id="table-tasks">
       <thead>
         <tr>
@@ -24,7 +24,7 @@
             <td><a id="task-name" href="/users/105/tasks/158">chono</a></td>
             <td>2019/08/03 23:36</td>
             <td>
-              <a class="btn btn-success" href="/users/105/tasks/158/edit">編集</a>
+              <a class="btn btn-success" <%= link_to "編集", users_update_path%></a>
               <a data-confirm="「chono」を削除します。よろしいですか？" class="btn btn-danger" rel="nofollow" data-method="delete" href="/users/105/tasks/158">削除</a>
             </td>
           </tr>

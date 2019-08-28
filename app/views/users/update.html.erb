@@ -1,0 +1,22 @@
+<% provide(:title, 'Update') %>
+<div class="container">
+      
+<h2>タスク編集</h2>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <form action="/users/105/tasks/158" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="patch" /><input type="hidden" name="authenticity_token" value="ApfLcR0vQtxED4/uAPWo4sVS70wanBZ2PzBaBVdTmSqUR5Vm1leXZo5+H1ecTlIb3xfucFDvN/0rR4CeMnNJYA==" />
+      
+      
+      <label class="label-form" for="task_name">名称</label>
+      <input class="form-control" type="text" value="chono" name="task[name]" />
+
+      <label class="label-form" for="task_description">詳細</label>
+      <textarea rows="5" class="form-control" name="task[description]">
+Oh YHAH！</textarea>
+<br>
+      <a class="btn btn-primary btn-form" <%= link_to "更新", users_update1_path%></a>
+      <a class="btn btn-default btn-form" <%= link_to "キャンセル", users_edit_path%></a>
+</form>  </div>
+</div>
+      

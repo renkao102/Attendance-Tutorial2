@@ -2,10 +2,14 @@
  <div class="row">
   <div class="col-md-7">
     <div class="center" id="top-main">
+      <br>
       <h1 id="top-main-title">TaskApp</h1>
-      <p>TaskAppは簡易ToDo管理ツールです。</p>
-      <p>↓↓初めてのご利用↓↓</p>
-        <a class="btn btn-lg btn-success" href="/signup">アカウント作成</a>
+      <p1>TaskAppは簡易ToDo管理ツールです。</p1>
+      <br>
+      <br>
+      <p2>↓↓初めてのご利用↓↓</p2s>
+      <br>
+      <a class="btn btn-lg btn-success" href="/signup">アカウント作成</a>
     </div>
   </div>
 
@@ -21,7 +25,12 @@
         <label class="checkbox inline checkbox-login" for="remember-me">
           <input name="session[remember_me]" type="hidden" value="0" /><input id="remember-me" type="checkbox" value="1" name="session[remember_me]" />
           <span>ログイン情報を記憶する</span>
-</label>        
+</label>
+        <% if session[:user_id] %>
         <input type="submit" name="commit" value="ログイン" class="btn btn-primary btn-block btn-form" data-disable-with="ログイン" />
+        <% else %>
+        <input type="submit" name="commit" value="ログイン状態です" class="btn btn-primary btn-block btn-form" disabled="disabled" data-disable-with="ログイン状態です" />
+        <% end %>
+        
 </form>  </div>
 </div>
